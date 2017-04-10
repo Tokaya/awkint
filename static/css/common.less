@@ -1,5 +1,5 @@
-@cnfont: 'Microsoft Yahei';
-@enfont: 'gotham';
+@cnfont: 'PingFang SC',"Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+@enfont: 'gothamregular',"Arial",Helvetica;
 @blue-1: #4608ad;
 @blue-2: #4d2dc3;
 @black: #363636;
@@ -25,13 +25,20 @@ body{
   vertical-align: middle;
   line-height: 130px;
   > img {
-    width: 45px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    width: 40px;
   }
 }
 @media screen and (max-width: 760px) {
   .navbar-brand {
+    height: 100px;
     line-height: 60px;
     > img {
+      top: 20%;
       width: 30px;
     }
   }
@@ -46,7 +53,7 @@ body{
   font-family: @cnfont;
   font-size: 5.3rem;
   font-weight: bold;
-  line-height: 14.5rem;
+  line-height: 10rem;
 }
 .h2 {
   font-family: @cnfont;
@@ -63,12 +70,12 @@ body{
 .gotham_border, .gotham_border>p {
   font-family: @enfont;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: bolder;
 }
 .gotham_bord {
   font-family: @enfont;
   font-size: 2.2rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 
@@ -80,7 +87,7 @@ body{
 .explain_regular, .explain_regular > p {
   font-family: @cnfont;
   font-size: 1.5rem;
-  font-weight: lighter;
+  font-weight: normal;
   line-height: 1.4;
 }
 
@@ -96,6 +103,11 @@ body{
   width: 100%;
   height: 0;
   margin-bottom: 149px;
+}
+.space111 {
+  width: 100%;
+  height: 0;
+  margin-bottom: 111px;
 }
 .space34 {
   width: 100%;

@@ -73,7 +73,7 @@ strong {
 	width: 100%;
 	overflow: hidden;
 }
-
+.clearfix::before,
 .clearfix:after {
 	content: "";
 	display: block;
@@ -90,7 +90,7 @@ a {
 	font-family: 'san_francisco_displaysemibold', Tahoma, Arial, sans-serif;
 }
 p{
-	font-family: 'san_francisco_displaysemibold';
+	/*font-family: 'san_francisco_displaysemibold';*/
 }
 a:hover {
 	text-decoration: none;
